@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "object",
+        "properties": {
+          "common": {
+            "type": "string"
+          },
+          "official": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "common",
+          "official"
+        ]
+      },
+      "capitalInfo": {
+        "type": "object",
+        "properties": {
+          "latlng": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "minItems": 1
+          }
+        }
+      },
+      "coatOfArms": {
+        "properties": {
+          "png": {
+            "type": "string",
+            "format": "uri"
+          },
+          "svg": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      },
+      "idd": {
+        "type": "object",
+        "properties": {
+          "root": {
+            "type": "string"
+          },
+          "suffixes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1
+          }
+        }
+      }
+    },
+    "required": [
+      "name"
+    ]
+  }
+}
