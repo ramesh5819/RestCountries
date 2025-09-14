@@ -31,8 +31,3 @@ Run the following command in the terminal to download and install all required d
 ```bash
 mvn clean install
 ```
-### 4. import the project
-Open IntelliJ IDEA.
-Select File > Open and navigate to the project directory.
-IntelliJ will automatically detect the pom.xml file and import the Maven project.
-
